@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BMI Calculator</title>
+</head>
+
+<body class="bg-green-900">
+    <div class="container h-[32rem] w-96 bg-white mx-auto my-10 rounded-2xl">
+        <p class="text-center text-2xl font-bold">BMI Calculator</p>
+        <label for="weight" class="p-2 font-bold">Weight (Kg):</label>
+        <input type="number" value="0" class="text-center p-1 mx-4 my-4 weight" id="weight" name="fname">
+        <label for="height" class="p-2 font-bold">Height (cm):</label>
+        <input type="number" value="0" class="text-center p-1 mx-4 my-4" id="height" name="fname" ><br>
+        <button class="bg-black text-white h-8 w-40 mx-4">RESET</button>
+        <button class="bg-green-400 text-white h-8 w-40 submit" onclick="changeValue()">SUBMIT</button>
+        <p class="text-center my-5 font-bold">Your BMI is</p>
+        <div class="bmi-container text-6xl text-center">0</div>
+        <div class="rateOfHealth h-10 text-center font-bold"></div>
+        <div class="flex mx-5">
+            <div class="bg-yellow-400 h-2 w-24"></div>
+            <div class="bg-green-400 h-2 w-24"></div>
+            <div class="bg-orange-400 h-2 w-24"></div>
+            <div class="bg-red-700 h-2 w-24"></div>
+        </div>
+        <div class="flex my-2 mx-5">
+            <div class="mx-3 text-xs">Underweight</div>
+            <div class="mx-3 text-xs">Normal</div>
+            <div class="mx-7 text-xs">Overweight</div>
+            <div class="mx-3 text-xs">Obese</div>
+        </div>
+        <div class="flex mx-5">
+            <div class="mx-3 font-bold text-sm">&lt18.5</div>
+            <div class="mx-7 font-bold text-sm">18.5-25</div>
+            <div class="mx-7 font-bold text-sm">25-30</div>
+            <div class="mx-5 font-bold text-sm">>=30</div>
+        </div>
+
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
