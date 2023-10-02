@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    .buttons{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        cursor: pointer;
+    }
+    .red{
+        background-color: red;
+        border: none;
+        padding: 5px;
+        font-size: 20px;
+    } 
+    .blue{
+        background-color: blue;
+        border: none;
+        padding: 5px;
+        font-size: 20px;
+    } 
+    .green{
+        background-color: green;
+        border: none;
+        padding: 5px;
+        font-size: 20px;
+    } 
+    .purple{
+        background-color: purple;
+        border: none;
+        padding: 5px;
+        font-size: 20px;
+    }
+</style>
+<body>
+
+    <div class="buttons">
+        <button class="red" onclick="redColor()">Red</button>
+        <button class="green" onclick="greenColor()">Green</button>
+        <button class="blue" onclick="blueColor()">Blue</button>
+        <button class="purple" onclick="purpleColor()">Purple</button>
+    </div>
+
+    <script>
+        var redButton = document.querySelector('.red');
+        var greenButton = document.querySelector('.green');
+        var blueButton = document.querySelector('.blue');
+        var purpleButton = document.querySelector('.purple');
+
+        function redColor(){
+            document.body.style.backgroundColor = "red";
+        }
+        function greenColor(){
+            document.body.style.backgroundColor = "green";
+        }
+        function blueColor(){
+            document.body.style.backgroundColor = "blue";
+        }
+        function purpleColor(){
+            document.body.style.backgroundColor = "purple";
+        }
+
+    </script>
+</body>
+</html>

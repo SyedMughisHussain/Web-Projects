@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Scramble Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #scrambled-word {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    #answer-input {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    #check-button {
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #result {
+      font-size: 18px;
+      margin-top: 20px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Word Scramble Game</h1>
+
+  <div id="scrambled-word"></div>
+  <input type="text" id="answer-input" placeholder="Enter your answer">
+  <button id="check-button" onclick="checkAnswer()">Check Answer</button>
+  <div id="result"></div>
+
+  <script>
+    const scrambledWords = ["pplea", "lcat", "elhlo", "drowl", "ogd", "tseraw", "noitcif", "yeatb", "tnemeviro", "kboor", "repapi", "ylbbo", "tac", "pmraegmra", "srenghit", "sihdtcay", "tarmmo", "anem", "esylp", "rrepogam"];
+    const trueAnswers = ["apple", "cat", "hello", "world", "dog", "waster", "fiction", "beaty", "environment", "brook", "piper", "bolly", "cat", "grammer", "strength", "dayshift", "martmo", "name", "slype", "programmer"];
+
+    let currentWordIndex = 0;
+    let currentScrambledWord = scrambledWords[currentWordIndex];
+    let resultDiv = document.getElementById("result");
+
+    function displayNextWord() {
+      document.getElementById("scrambled-word").textContent = scrambleWord(currentScrambledWord);
+      document.getElementById("answer-input").value = "";
+      resultDiv.textContent = "";
+    }
+
+    function scrambleWord(word) {
+      return word.split('').sort(function(){return 0.5-Math.random()}).join('');
+    }
+
+    function checkAnswer() {
+      const userAnswer = document.getElementById("answer-input").value.toLowerCase();
+      const correctAnswer = trueAnswers[currentWordIndex];
+
+      if (userAnswer === correctAnswer) {
+        resultDiv.textContent = "Correct! Well done!";
+      } else {
+        resultDiv.textContent = "Incorrect. Try again.";
+      }
+
+      currentWordIndex++;
+
+      if (currentWordIndex < scrambledWords.length) {
+        currentScrambledWord = scrambledWords[currentWordIndex];
+        displayNextWord();
+      } else {
+        document.getElementById("scrambled-word").textContent = "Game Over";
+        document.getElementById("answer-input").disabled = true;
+        document.getElementById("check-button").disabled = true;
+      }
+    }
+
+    displayNextWord();
+  </script>
+
+</body>
+</html>
