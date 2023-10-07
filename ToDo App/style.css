@@ -1,4 +1,16 @@
 .text ul{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 20px;
     background-color: black;
     color: white;
+}
+.text ul button{
+    cursor: pointer;
+    margin-left: 100px;
+}
+.text ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
