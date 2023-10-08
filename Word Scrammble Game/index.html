@@ -10,18 +10,20 @@
 
 <body>
     <div class="container">
-        <p class="gameName">World Scramble Game</p>
+        <p class="gameName">Word Scramble Game</p>
         <div class="totalScore score">
-            <p>Total Score: </p>
+            <p>Total Words: </p>
             <p class="totalScorelevel"></p>
         </div>
         <div class="yourScore score">
-            <p>Your Score: </p>
-            <p class="yourScorelevel"></p>
+            <p>Your Right Guesses: </p>
+            <p class="yourRight">0</p>
         </div>
+        <p class="right">Your Wrong Guesses: </p>
+            <p class="yourWrong">0</p>
         <hr>
         <div class="Scramble word">
-            <p class="scrambleListWord">EDEENL</p>
+            <p class="scrambleListWord"></p>
         </div>
         <div class="yourScore score">
             <p>Time Left: </p>
@@ -29,8 +31,8 @@
         </div>
         <input class="input" type="text" placeholder="Enter a valid word">
         <div class="buttons">
-            <button class="refresh">Refresh Word</button>
-            <button class="check">Check Word</button>
+            <button class="refresh" onclick="">Refresh Game</button>
+            <button class="check" onclick="checkWord()">Check Word</button>
         </div>
 
     </div>
