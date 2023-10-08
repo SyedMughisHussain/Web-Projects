@@ -11,31 +11,43 @@ function checkWord() {
   } else if (inputWord.value === "apple") {
     document.querySelector(".yourRight").innerHTML = ++right;
     inputWord.value = "";
-    document.querySelector(".scrambleListWord").innerHTML = "elephant";
+    document.querySelector(".scrambleListWord").innerHTML = "tnahpele";
+  } else if (inputWord.value !== "apple") {
+    document.querySelector(".yourWrong").innerHTML = ++wrong;
+    inputWord.value = "";
+    document.querySelector(".scrambleListWord").innerHTML = "tnahpele";
   } else if (inputWord.value === "elephant") {
     document.querySelector(".yourRight").innerHTML = ++right;
+    inputWord.value = "";
+    document.querySelector(".scrambleListWord").innerHTML = "ogd";
+  } else if (inputWord.value !== "elephant") {
+    document.querySelector(".yourWrong").innerHTML = ++wrong;
     inputWord.value = "";
     document.querySelector(".scrambleListWord").innerHTML = "ogd";
   } else if (inputWord.value === "dog") {
     document.querySelector(".yourRight").innerHTML = ++right;
     inputWord.value = "";
     document.querySelector(".scrambleListWord").innerHTML = "tac";
+  } else if (inputWord.value !== "dog") {
+    document.querySelector(".yourWrong").innerHTML = ++wrong;
+    inputWord.value = "";
+    document.querySelector(".scrambleListWord").innerHTML = "tac";
   } else if (inputWord.value === "cat") {
     document.querySelector(".yourRight").innerHTML = ++right;
     inputWord.value = "";
     document.querySelector(".scrambleListWord").innerHTML = "wemo";
+  } else if (inputWord.value !== "cat") {
+    document.querySelector(".yourWrong").innerHTML = ++wrong;
+    inputWord.value = "";
+    document.querySelector(".scrambleListWord").innerHTML = "elephant";
   } else if (inputWord.value === "meow") {
     document.querySelector(".yourRight").innerHTML = ++right;
     inputWord.value = "";
     document.querySelector(".scrambleListWord").innerHTML = "End";
-  } else if (
-    inputWord.value !== "apple" ||
-    inputWord.value !== "elephant" ||
-    inputWord.value !== "dog" ||
-    inputWord.value !== "cat" ||
-    inputWord.value !== "meow"
-  ) {
-    document.querySelector(".yourWrong").innerHTML = ++wrong;
+  } else if (inputWord.value !== "meow") {
+    document.querySelector(".yourRight").innerHTML = ++wrong;
+    inputWord.value = "";
+    document.querySelector(".scrambleListWord").innerHTML = "elephant";
   } else {
     alert("Wrong");
   }
