@@ -1,0 +1,13 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: yellowgreen;
+}
+.container{
+    background-color: white;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    margin: 100px auto;
+    padding: 10px;
+}
