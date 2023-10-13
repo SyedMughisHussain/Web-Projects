@@ -1,45 +1,65 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-color: yellowgreen;
+    background-color: #F6F7FA;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
-    background-color: white;
-    border-radius: 10px;
-    height: fit-content;
-    width: 400px;
-    margin: 100px auto;
-    padding: 20px;
+    padding: 30px;
+    height: 300px;
+    width: 350px;
+    margin: 80px auto;
+    background-color: #FFFFFF;
 }
-.head{
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-}
-.buttons{
-    margin-top: 30px;
-    height: 40px;
+.images{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.score{
-    display: flex;
-}
-button{
+.image{
+    height: 50px;
     cursor: pointer;
-    /* margin-top: 30px; */
-    width: 130px;
 }
-.yourcChoose{
-    display: flex;
-    margin-top: 10px;
-    margin-left: 120px;
+.imageLeft{
+    height: 70px;
+    width: 70px;
+    transform: rotate(90deg);
 }
-.comChoose{
-    margin-top: 10px;
-    margin-left: 100px;
+.imageRight{
+    height: 70px;
+    width: 70px;
+    transform: rotate(-90deg);
+}
+.text{
     display: flex;
+    justify-content: space-around;
+    margin-left: 5px;
+}
+.color{
+    color: #7D2AE8;
+    font-weight: bold;
+}
+.string{
+    text-align: center;
+    font-size: 30px;
+    color: #7D2AE8;
+}
+.rock{
+    opacity: 0.5;
+}
+.rock:hover{
+    opacity: 1;
+}
+.paper{
+    opacity: 0.5;
+}
+.paper:hover{
+    opacity: 1;
+}
+.scissor{
+    opacity: 0.5;
+}
+.scissor:hover{
+    opacity: 1;
 }
 
 

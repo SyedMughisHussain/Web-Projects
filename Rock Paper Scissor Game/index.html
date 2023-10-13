@@ -4,33 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Rock Paper Scissor</title>
+    <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <p class="head">Rock Paper Scissor Game</p>
-        <div class="computer score">
-           <span>Computer:</span>
-           <span>0</span>
-        </div>
-        <div class="your score">
-            <span>Your:</span>
-           <span>0</span>
-        </div>
-        <div class="buttons">
-            <button onclick="rock()">Rock</button>
-            <button>Paper</button>
-            <button>Scissor</button>
+        <div class="result images">
+            <img class="imageLeft image user" src="./images/rock.png" alt="">
+            <img class="imageRight image computer"  src="./images/rock.png" alt="">
         </div>
         <div class="cont">
-
+            <p class="result string">Let's Play!!</p>
         </div>
-        <div class="result">
-            
+        <div class="images">
+            <img src="./images/rock.png" onclick="initGame('rock')" class="image rock" alt="">
+            <img src="./images/paper.png" onclick="initGame('paper')" class="image paper" alt="">
+            <img src="./images/scissors.png" onclick="initGame('scissor')"  class="image scissor" alt="">
         </div>
-
+        <div class="text">
+            <p class="color">Rock</p>
+            <p class="color">Paper</p>
+            <p class="color">Scissor</p>
+        </div>
+        
     </div>
-
 
     <script src="./script.js"></script>
 </body>
