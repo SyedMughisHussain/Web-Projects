@@ -7,26 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="result images">
-            <img class="imageLeft image user" src="./images/rock.png" alt="">
-            <img class="imageRight image computer"  src="./images/rock.png" alt="">
+    <div class="main">
+        <div class="box">
         </div>
-        <div class="cont">
-            <p class="result string">Let's Play!!</p>
+        <div class="game">
+            <p class="name">Rock</p>
+            <p class="name">Paper</p>
+            <p class="name">Scissor</p>
         </div>
-        <div class="images">
-            <img src="./images/rock.png" onclick="initGame('rock')" class="image rock" alt="">
-            <img src="./images/paper.png" onclick="initGame('paper')" class="image paper" alt="">
-            <img src="./images/scissors.png" onclick="initGame('scissor')"  class="image scissor" alt="">
+        <div class="container">
+            <div class=" score">
+                <span>Computer:</span>
+                <span class="computer">0</span>
+            </div>
+            <div class="score">
+                <span>You:</span>
+                <span class="your">0</span>
+            </div>
+            <div class="result images">
+                <img class="imageLeft image user" src="./images/rock.png" alt="">
+                <img class="imageRight image computer"  src="./images/rock.png" alt="">
+            </div>
+            <div class="cont">
+                <p class="result string">Let's Play!!</p>
+            </div>
+            <div class="images">
+                <img src="./images/rock.png" onclick="initGame('rock')" class="image rock" alt="">
+                <img src="./images/paper.png" onclick="initGame('paper')" class="image paper" alt="">
+                <img src="./images/scissors.png" onclick="initGame('scissor')"  class="image scissor" alt="">
+            </div>
+            <div class="text">
+                <p class="color">Rock</p>
+                <p class="color">Paper</p>
+                <p class="color">Scissor</p>
+            </div>
+            <!-- <button onclick="resetGame()">Restart</button> -->
         </div>
-        <div class="text">
-            <p class="color">Rock</p>
-            <p class="color">Paper</p>
-            <p class="color">Scissor</p>
-        </div>
-        
     </div>
+    
 
     <script src="./script.js"></script>
 </body>
