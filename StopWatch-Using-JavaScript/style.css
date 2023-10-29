@@ -1,0 +1,38 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: grey;
+}
+.container{
+    height: 300px;
+    width: 400px;
+    margin: 150px auto;
+}
+.timer{
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.buttons{
+    margin-top: 20px;
+}
+button{
+    margin-left: 40px;
+    height: 40px;
+    width: 50px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(229, 112, 112);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.stopWatchTime{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
