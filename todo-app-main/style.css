@@ -30,5 +30,9 @@ h1{
     font-size: 15px;
 }
 .items{
-    margin-top: 10px;
+    margin-top: 20px;
+}
+.check{
+  background-color: white;
+  color: black;
 }
