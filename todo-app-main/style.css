@@ -13,7 +13,7 @@
 }
 .main{
     margin-top: 60px;
-    height: 400px;
+    height: fit-content;
     width: 500px;
     border: 2px solid blue;
     color: white;
@@ -22,17 +22,44 @@ h1{
     letter-spacing: 10px;
 }
 .newtodo{
-    margin-top: 25px;
     border: none;
     width: 94%;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     padding: 15px;
     font-size: 15px;
+}
+.newtodo:focus{
+    outline: none;
 }
 .items{
     margin-top: 20px;
 }
 .check{
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
   background-color: white;
   color: black;
+}
+.inputfield{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row; 
+}
+.add{
+  height: 100%;
+  width: 60px;
+  padding: 16px;
+  background-color: orangered;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.checkBox{
+  height: 20px;
+  width: 20px;
 }
